@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stargazer.Abp.Template.Application.Contracts\Stargazer.Abp.Template.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Stargazer.Abp.Template.Domain\Stargazer.Abp.Template.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="8.3.0" />
+    <PackageReference Include="Volo.Abp.Caching" Version="8.3.0" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="8.3.0" />
+    <PackageReference Include="Stargazer.Abp.Account.Application" Version="8.1.4-alpha" />
+    <PackageReference Include="Stargazer.Abp.ObjectStorage.Application" Version="8.1.4-alpha" />
+    <PackageReference Include="Stargazer.Abp.Authentication.JwtBearer.Application" Version="8.1.4-alpha" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

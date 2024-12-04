@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stargazer.Abp.Template.Application.Contracts\Stargazer.Abp.Template.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="8.3.0" />
+    <PackageReference Include="Stargazer.Abp.Authentication.JwtBearer.HttpApi" Version="8.1.4-alpha" />
+    <PackageReference Include="Stargazer.Abp.Captcha.HttpApi" Version="7.4.2.1-alpha" />
+    <PackageReference Include="Stargazer.Abp.Account.HttpApi" Version="8.1.4-alpha" />
+    <PackageReference Include="Stargazer.Abp.ObjectStorage.HttpApi" Version="8.1.4-alpha" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
